@@ -1,0 +1,116 @@
+Olexandr Matveyev
+
+-----------------------------------------------------------------------------------------------------------
+matveyev_olexandr.java_lab.zip file has:
+1: in the main folder is compiled files
+2: in the src folder is the source files
+3: csci305_javalab is the Intellij IDEA project
+4: csci305_javalab.jar file
+
+run jar: java -jar csci305_javalab.jar
+run class: java main.java.csci305.javalab.Main
+-----------------------------------------------------------------------------------------------------------
+
+1:  Describe your Player LastPlayBot. How did you implement this strategy? (5 points)
+    I added few extra methods to the Player superclass and two extra fields.
+	Basically each player object will hold last move and current move of the opponent.
+	When play() method will be called in the LastPlayBot class then the play() method	
+	will return last played element of its opponent.
+	First move of the LastPlayBot is random.
+
+2:  Describe your Player MyBot, explaining the strategy you employed and how you accomplished it. (5 points)
+    I added few extra methods to the Player superclass and two extra fields.
+	Basically each player object will hold last move and current move of the opponent.
+	When play() method will be called in the MyBot class then the play() method	
+	will return current move of its opponent.
+	MyBot every time will do exactly the same move as its opponent.
+
+3:  Using the course notes and any web resources of your choosing, explain the type system of Java, giving 
+    attention to the concepts of binding time, dynamic vs. static typing, strong vs. weak typing, and user-defined types (classes). Cite any sources you used other than class discussion or the textbook. (15 points)
+    3.1: Type system of Java:
+         Java has four different type systems: primitive types, null type, array types, class types;
+         Primitive types: int, short, long, byte, char, float, double, and boolean.
+	     Null type: the type of the value null.
+	     Array types: types of arrays of values.
+         Class types: types of objects.
+		 
+         source: http://www.ccs.neu.edu/home/riccardo/courses/csu370-fa07/lect4.pdf
+		 
+    3.2: Binding:
+	     A binding is an association between an entity and an attribute, such as between a variable 
+	     and its type or value, or between a function and its code.
+		 
+	     Binding time is the point at which a binding takes place. 
+         There are different times a binding can happen:
+		 
+         Design Time:  Some binding decisions are made when a language is designed such as the binding of + to 
+		               addition in C, the operations of the String class in Java and so on. 
+					   
+	     Compile Time: Bindings can also be done while the program is compiled such as binding variables to types 
+		               in C++ or Java.
+					   
+	     Link Time:    Link time is when compiled code is combined into a full program for C and C++. At this 
+		               time, global and static variables are bound to addresses. 
+					   
+	     Run Time:     Many bindings happen at run time including most values being bound to variables. 
+		               In dynamically typed languages like Python, types are bound at run time as well. 
+
+	Any binding that happens at run time is called dynamic, and any that happens before run time is called static. Things that are statically bound can not change as a program runs, and those that are dynamically bound can change. 		
+					   
+	3.3: Dynamic vs. static typing / Strong vs. weak typing:
+	     Static Type Binding:  Static type binding can be done either implicitly or explicitly. 
+		                       Explicit declaration means that the programmer must specify the types of variables.
+		 Dynamic Type Binding: Dynamic type binding is when the type of a variable is not decided until the 
+		                       program runs. Dynamically-bound types are always implicit.
+							   
+		 Dynamic vs. static:  Dynamic typing is way faster than static when it comes to development process, but 
+		                      at some point it can become extremely complicated to debug program that was written in some dynamic language. In some statically typed language it can take more time to develop application, but it will be way easier to debug program.
+		 
+	3.4: User-defined types (classes):
+	     It is type defined by user, such types can consists of any other types even user-defined types.
+		 It can be basic class, abstract class and interface. 
+		 An abstract class is the mix of interface and basic class. 
+		 An interface can have only abstract methods, basically such methods will have only its signature, 
+		 but no method body.
+	
+	source: http://cs.umw.edu/~finlayson/class/fall13/cpsc401/notes/05-binding-scope.html
+	
+4:  Play a number of games, selecting your various players. Do you notice any trends? Are you, 
+    as the Human Player, able to beat any of the Bots on a consistent basis? (5 points)
+	LastPlayBot vs. StupidBot: StupidBot will beat LastPlayBot 50% because first move of 
+	                           the LastPlayBot is random.
+	LastPlayBot vs. RandomBot: RandomBot will beat LastPlayBot 6 times out of 10;
+	LastPlayBot vs. IterativeBot: LastPlayBot win 100%;
+	LastPlayBot vs. LastPlayBot : tie game;
+	LastPlayBot vs. Human: Human 100% win;
+	LastPlayBot vs. MyBot: 100% tie game;
+	
+	As a Human Player I been able to beat any of the Bots 100% times;
+	
+
+5:  Read the wikipedia entry on Normal Form Games. Also, review the Wikipedia page on 
+    Rock-paper-scissors-lizard-Spock. 
+    5.1: Is it possible to design a Player strategy that is more likely to succeed? Why or why not? 
+         Explain in a paragraph. 
+		 it is possible because the winning and losing options of all elements are predefined.
+		 
+    5.2: It is possible to answer this question even if you did not finish the Lab? (10 points)
+	     Yes, because all these questions are not so complicated, and even first two questions 
+		 are not required to finish the lab to answer it.
+
+6:  Name something you like about Java. Explain.
+    Language syntax. The Java syntax is easy to learn or may be I just used to it.
+
+7:  Name something you dislike about Java. Explain.
+    I do like all about Java.
+	
+8:  Did you enjoy this lab? Which aspects did you like and/or dislike?
+	I did enjoy all aspects of this lab.
+
+9:  Approximately how many hours did you spend on this lab?
+    ~5 hours
+
+10: How much experience have you had in Java prior to this course?
+    I am using Java approximately ~1 year.
+	I had lots of labs in Java.
+    

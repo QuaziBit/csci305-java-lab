@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="csci305_javalab:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/csci305_javalab_jar</output-path>
+    <root id="archive" name="csci305_javalab.jar">
+      <element id="module-output" name="csci305_javalab" />
+    </root>
+  </artifact>
+</component>
