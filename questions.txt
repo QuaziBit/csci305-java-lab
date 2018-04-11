@@ -1,16 +1,5 @@
 Olexandr Matveyev
 
------------------------------------------------------------------------------------------------------------
-matveyev_olexandr.java_lab.zip file has:
-1: in the main folder is compiled files
-2: in the src folder is the source files
-3: csci305_javalab is the Intellij IDEA project
-4: csci305_javalab.jar file
-
-run jar: java -jar csci305_javalab.jar
-run class: java main.java.csci305.javalab.Main
------------------------------------------------------------------------------------------------------------
-
 1:  Describe your Player LastPlayBot. How did you implement this strategy? (5 points)
     I added few extra methods to the Player superclass and two extra fields.
 	Basically each player object will hold last move and current move of the opponent.

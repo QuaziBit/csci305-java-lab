@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 /**
+ * Main/Driver class
  * @author Olexandr Matveyev
  */
 public class Main
